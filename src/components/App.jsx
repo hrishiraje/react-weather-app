@@ -14,7 +14,8 @@ class App extends React.Component{
   }
 
   getWeather(city){
-    this.props.gatherWeather(city, (data) => {
+    var key = this.props.API_KEY;
+    this.props.gatherWeather(key, city, (data) => {
       this.setState({
         'weeksData': data.list,
         'todayData': data

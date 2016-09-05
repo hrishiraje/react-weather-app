@@ -1,6 +1,6 @@
-var gatherWeather = (city, callback) => {
-  $.get('https://api.openweathermap.org/data/2.5/forecast/daily', {
-    appid: 'd59578edc6395145e5a089c521629d80',
+var gatherWeather = (key, city, callback) => {
+  $.get('http://api.openweathermap.org/data/2.5/forecast/daily', {
+    appid: key,
     q: `${city},us`
   })
   .done((data) => {
