@@ -15,7 +15,7 @@ var WeekdayWeather = ({day}) => {
   return(
     <li>
       <h4>{getDay(day.dt)}</h4>
-      <img src={`http://openweathermap.org/img/w/${day.weather[0].icon}.png`} />
+      <img src={`https://openweathermap.org/img/w/${day.weather[0].icon}.png`} />
       <div className='mainTemp'>{farenheit(day.temp.day)}&deg;</div>
     </li>
   );
