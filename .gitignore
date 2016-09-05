@@ -8,5 +8,5 @@ node_modules/
 compiled/
 
 ## API keys ##
-src/config/weather.js
-compiled/config/weather.js
+src/config/
+compiled/config/
