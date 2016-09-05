@@ -1,5 +1,5 @@
 var gatherWeather = (key, city, callback) => {
-  $.get('https://api.openweathermap.org/data/2.5/forecast/daily', {
+  $.get('http://api.openweathermap.org/data/2.5/forecast/daily', {
     appid: key,
     q: `${city},us`
   })
